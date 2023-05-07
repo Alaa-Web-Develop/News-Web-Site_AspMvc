@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-NewsWebSite_ASP_AdminPanel",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-NewsWebSite_ASP_AdminPanel",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}

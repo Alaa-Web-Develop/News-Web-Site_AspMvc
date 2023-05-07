@@ -1,0 +1,43 @@
+﻿
+@model List<ContactUs>
+
+@*<div class="container mt-3 mb-3">
+    <table border="1" style="width:100%">
+
+    
+    <thead style="border:2px solid black;background-color:yellow;color:red">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Subject</th>
+        </tr>
+    </thead>
+        <tbody >
+        @foreach(var item in Model)
+        {
+                <tr style="border:2px solid black">
+                    <td>@item.Name</td>
+                    <td>@item.Email</td>
+                    <td>@item.Message</td>
+                    <td>@item.Subject</td>
+            </tr>
+        } 
+    </tbody>
+    </table>
+</div>*@
+<div class="container mt-3 mb-3">
+    <div class="row">
+     @foreach(var item in Model){
+            <div class="col-4  text-center" >
+                <div class="p-2" style="border:1px solid rgba(0,0,0,.2);margin:10px;">
+                    <img src="~/assets/img/doctors/doctors-1.jpg" style="width:100px;height:100px" />
+                    <h3>@item.Name</h3>
+                    <span>@item.Email</span>
+                    <p>@item.Message</p>
+                    <p>@item.Subject</p>
+                </div>
+            </div>
+     }
+    </div>
+</div>
